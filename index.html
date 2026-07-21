@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DreamCanvas AI</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar">
+
+<h1>DreamCanvas AI</h1>
+
+<ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#generate">Generate</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+
+<!-- Hero Section -->
+
+<section class="hero" id="home">
+
+<h2>Turn Your Imagination Into AI Art</h2>
+
+<p>
+Create stunning AI-inspired artworks from simple text prompts.
+Explore futuristic, fantasy, and creative designs instantly.
+</p>
+
+<a href="#generate">
+<button>Get Started</button>
+</a>
+
+</section>
+
+
+
+<!-- Prompt Generator Section -->
+
+<section class="generator" id="generate">
+
+<h2>Generate Your AI Artwork</h2>
+
+<br class="prompt-note">
+    Tip: Use detailed prompts for better AI-generated images. 
+    <br>
+    Example: "A luxury black villa at night with a swimming pool and cinematic lighting."
+</p>
+
+ <br> 
+ <br>
+
+<textarea
+id="prompt"
+placeholder="Describe the image you want to create..."
+></textarea>
+
+
+<select>
+<option>Realistic</option>
+<option>Anime</option>
+<option>Cartoon</option>
+<option>Cyberpunk</option>
+<option>Watercolor</option>
+<option>3D Art</option>
+</select>
+
+
+<select>
+<option>512 x 512</option>
+<option>768 x 768</option>
+<option>1024 x 1024</option>
+</select>
+
+
+<button id="generateBtn">
+Generate Image
+</button>
+
+
+<div class="loading" id="loading">
+
+<div class="spinner"></div>
+
+<h3>Generating your AI masterpiece...</h3>
+
+<p>
+Please wait! AI is creating your image.
+This may take a few seconds depending on your prompt.
+</p>
+
+</div>
+
+
+<div class="generated-image" id="result">
+
+<img
+id="generatedImage"
+src=""
+alt="Generated Image">
+
+<div class="image-buttons">
+
+<button id="downloadBtn">
+    <i class="fa-solid fa-download"></i> Download
+</button>
+
+<button id="saveBtn">
+    <i class="fa-solid fa-bookmark"></i> Save
+</button>
+
+<button id="shareBtn">
+    <i class="fa-solid fa-share-nodes"></i> Share
+</button>
+
+<p>Note: The Share feature is currently supported. Download and Save features will be available in future updates.</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<!-- Features Section -->
+
+<section class="features" id="features">
+
+<h2>Features</h2>
+
+<div class="feature-container">
+
+<div class="card">
+<i class="fa-solid fa-robot"></i>
+<h3>AI Powered</h3>
+<p>Create beautiful AI-inspired artworks.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-palette"></i>
+<h3>Multiple Styles</h3>
+<p>Choose from various artistic styles.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-image"></i>
+<h3>High Resolution</h3>
+<p>Generate stunning high-quality previews.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-mobile-screen"></i>
+<h3>Responsive</h3>
+<p>Works perfectly on all devices.</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<!-- Gallery Section -->
+
+<section class="gallery" id="gallery">
+
+<h2>AI Art Gallery</h2>
+
+<div class="gallery-container">
+
+<img src="images/castle.jpg">
+<img src="images/cyberpunk.jpeg">
+<img src="images/anime.jpeg">
+<img src="images/robot.jpg">
+<img src="images/forest.jpeg">
+<img src="images/mountain.jpeg">
+<img src="images/dragon.webp">
+<img src="images/astronaut.webp">
+
+</div>
+
+</section>
+
+
+
+
+<!-- Footer -->
+
+<footer id="contact">
+
+<h2>DreamCanvas AI</h2>
+
+<p>
+Transforming imagination into art.
+</p>
+
+<p>
+Made with HTML, CSS and JavaScript.
+</p>
+
+<p>
+© 2026 DreamCanvas AI. All Rights Reserved.
+</p>
+
+</footer>
+
+
+
+<!-- JS -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
